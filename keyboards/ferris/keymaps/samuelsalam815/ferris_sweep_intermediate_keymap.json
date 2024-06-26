@@ -151,9 +151,9 @@
       "KC_TRNS"
     ],
     [
-      "KC_LGUI",
-      "KC_LALT",
-      "KC_LCTL",
+      "LGUI(KC_TAB)",
+      "ANY(CTL_TAB)",
+      "ANY(ALT_TAB)",
       "KC_TAB",
       "KC_NO",
       "KC_HOME",

@@ -10,11 +10,15 @@
 //     nav down, trigger, nav up -> nav down, cmd down, tab, cmd up, nav up
 //
 // This behaviour is useful for more than just cmd-tab, hence: cmdish, tabish.
+//
+// backmod is inteded for a key that is used for inverting the behavior
+// e.g. alt-shift-tab switches tabs in the opposite direction to alt-tab so the backmod is shift.
 void update_swapper(
     bool *active,
     uint16_t cmdish,
     uint16_t tabish,
     uint16_t trigger,
     uint16_t keycode,
-    keyrecord_t *record
+    keyrecord_t *record,
+    uint16_t backmod
 );
