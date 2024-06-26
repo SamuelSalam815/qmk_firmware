@@ -15,7 +15,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[5] = LAYOUT_split_3x5_2(KC_NO, KC_F7, KC_F8, KC_F9, KC_F11, QK_BOOT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_F1, KC_F2, KC_F3, KC_F10, KC_NO, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI, KC_NO, KC_F4, KC_F5, KC_F6, KC_F12, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO)
 };
 
-const uint16_t PROGMEM left_esc_combo[] = {LT(2,KC_J), RCTL_T(KC_K), COMBO_END};
+const uint16_t PROGMEM left_esc_combo[] = {LT(1,KC_J), RCTL_T(KC_K), COMBO_END};
 const uint16_t PROGMEM right_esc_combo[] = {LCTL_T(KC_D), LSFT_T(KC_F), COMBO_END};
 const uint16_t PROGMEM tab_combo1[] = {KC_E, KC_R, COMBO_END};
 const uint16_t PROGMEM tab_combo2[] = {KC_W, KC_E, COMBO_END};
