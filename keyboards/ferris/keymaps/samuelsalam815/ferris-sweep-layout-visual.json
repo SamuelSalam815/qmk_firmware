@@ -26,12 +26,13 @@
     {
       "y": -0.87,
       "x": 1,
-      "t": "#ffffff\n#c13828\n#f8d615\n#0046ad\n\n\n\n#8ed7b0",
+      "t": "#ffffff\n#c13828\n#f8d615\n#0046ad",
       "f2": 0
     },
     "W\nF7\n`\n7",
     {
-      "x": 1
+      "x": 1,
+      "t": "#ffffff\n#c13828\n#f8d615\n#0046ad\n\n\n\n#8ed7b0"
     },
     "R\nF9\n-\n9\n\n\n\n}",
     {
@@ -54,7 +55,7 @@
     {
       "y": -0.8799999999999999,
       "x": 4,
-      "t": "#ffffff\n#c13828\n#f8d615\n#0046ad\n\n\n\n#8ed7b0"
+      "t": "#ffffff\n#c13828\n#f8d615"
     },
     "T\nF11\n\\",
     {
@@ -75,12 +76,11 @@
   [
     {
       "y": -0.87,
-      "t": "#ffffff\n\n#f8d615\n\n\n\n\n#8ed7b0"
+      "t": "#ffffff"
     },
     "Q",
     {
-      "x": 9.25,
-      "t": "#ffffff"
+      "x": 9.25
     },
     "P"
   ],
@@ -129,7 +129,7 @@
     "J\n\n\n<i class='kb kb-Arrows-Down'></i>\nSym1",
     {
       "x": 1,
-      "t": "#ffffff\n\n\n#43165e\n#1a1a1a\n\n\n#43165e"
+      "t": "#ffffff\n\n\n#43165e\n#1a1a1a"
     },
     "L\n\n\n<i class='kb kb-Arrows-Right'></i>\nAlt"
   ],
@@ -137,12 +137,12 @@
     {
       "y": -0.8799999999999999,
       "x": 4,
-      "t": "#ffffff\n#c13828\n#f8d615\n#0046ad\n\n\n\n#8ed7b0"
+      "t": "#ffffff\n#c13828\n#f8d615\n\n\n\n\n#8ed7b0"
     },
     "G\nF10\n=\n\n\n\n\n%",
     {
       "x": 1.25,
-      "t": "#ffffff\n\n\n#43165e\n#f8d615\n\n\n#43165e"
+      "t": "#ffffff\n\n\n#43165e\n#f8d615"
     },
     "H\n\n\n<i class='kb kb-Arrows-Left'></i>\nSym2"
   ],
@@ -154,15 +154,9 @@
     "A\n\n@\n\nSuper\n\n\n^",
     {
       "x": 9.25,
-      "t": "#ffffff\n\n\n#43165e\n#1a1a1a",
-      "fa": [
-        0,
-        0,
-        0,
-        1
-      ]
+      "t": "#ffffff\n\n\n#43165e\n#1a1a1a"
     },
-    ":\n\n\nCaps Lock\nSuper\n\n;"
+    ":\n\n\n\nSuper\n\n;"
   ],
   [
     {
@@ -188,12 +182,13 @@
     {
       "y": -0.8700000000000001,
       "x": 1,
-      "t": "#ffffff\n#c13828\n#f8d615\n#0046ad\n\n\n\n#8ed7b0",
+      "t": "#ffffff\n#c13828\n\n#0046ad",
       "f2": 0
     },
     "X\nF4\n\n4",
     {
-      "x": 1
+      "x": 1,
+      "t": "#ffffff\n#c13828\n#f8d615\n#0046ad\n\n\n\n#8ed7b0"
     },
     "V\nF6\n|\n6\n\n\n\n]",
     {
@@ -216,7 +211,7 @@
     {
       "y": -0.8799999999999999,
       "x": 4,
-      "t": "#ffffff\n#c13828\n#f8d615\n#0046ad\n\n\n\n#8ed7b0"
+      "t": "#ffffff\n#c13828\n#f8d615"
     },
     "B\nF12\n~",
     {
@@ -228,12 +223,11 @@
   [
     {
       "y": -0.8700000000000001,
-      "t": "#ffffff\n\n#f8d615\n\n\n\n\n#8ed7b0"
+      "t": "#ffffff"
     },
     "Z",
     {
-      "x": 9.25,
-      "t": "#ffffff"
+      "x": 9.25
     },
     "?\n\n\n\n\n\n/"
   ],
@@ -243,7 +237,7 @@
       "ry": 4.15,
       "y": -0.9000000000000004,
       "x": -1.25,
-      "t": "#ffffff\n\n#f8d615\n\n#43165e\n\n\n#8ed7b0"
+      "t": "#ffffff\n\n#f8d615\n\n#43165e"
     },
     "<i class='kb kb-Return-2'></i>\n\n'\n\nNav"
   ],
@@ -263,9 +257,9 @@
       "rx": 7.75,
       "y": -1,
       "x": -2,
-      "t": "#ffffff"
+      "t": "#ffffff\n\n\n#8ed7b0"
     },
-    "Shift"
+    "Shift\n\n\nCW"
   ],
   [
     {

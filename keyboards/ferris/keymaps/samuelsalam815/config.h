@@ -18,6 +18,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 #define TAPPING_TERM 200
-#define PERMISSIVE_HOLD
-#define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
 #define TAPPING_TERM_PER_KEY
+#define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
+#define CAPS_WORD_IDLE_TIMEOUT 0
+#define ONESHOT_TIMEOUT 1000  /* Time (in ms) before the one shot key is released */
