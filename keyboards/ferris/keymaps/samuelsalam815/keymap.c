@@ -29,3 +29,14 @@ combo_t key_combos[] = {
     COMBO(del_combo, KC_DEL),
 };
 
+uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case LGUI_T(KC_A):
+        case LGUI_T(KC_SCLN):
+            return TAPPING_TERM + 200;
+        case OSM(MOD_LSFT):
+            return 300;
+        default:
+            return TAPPING_TERM;
+    }
+}
