@@ -7,9 +7,18 @@
     {
       "x": 2,
       "c": "#96938e",
-      "t": "#ffffff\n#c13828\n#8ed7b0\n#0046ad\n\n\n\n#f8d615"
+      "t": "#ffffff\n#c13828\n#8ed7b0\n#0046ad\n\n\n#43165e\n#f8d615",
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
     },
-    "E\nF8\n{\n8\n\n\n\n@",
+    "E\nF8\n{\n8\n\n\nCtrl\n@",
     {
       "x": 5.25,
       "t": "#ffffff\n\n\n#43165e",
@@ -26,15 +35,23 @@
     {
       "y": -0.87,
       "x": 1,
-      "t": "#ffffff\n#c13828\n\n#0046ad\n\n\n\n#f8d615",
-      "f2": 0
+      "t": "#ffffff\n#c13828\n\n#0046ad\n\n\n#43165e\n#f8d615",
+      "fa": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
     },
-    "W\nF7\n\n7\n\n\n\n`",
+    "W\nF7\n\n7\n\n\nAlt\n`",
     {
       "x": 1,
-      "t": "#ffffff\n#c13828\n#8ed7b0\n#0046ad\n\n\n\n#f8d615"
+      "t": "#ffffff\n#c13828\n#8ed7b0\n#0046ad\n\n\n#43165e\n#f8d615"
     },
-    "R\nF9\n}\n9\n\n\n\n!",
+    "R\nF9\n}\n9\n\n\nTab\n!",
     {
       "x": 3.25,
       "t": "#ffffff\n\n\n#43165e",
@@ -76,11 +93,12 @@
   [
     {
       "y": -0.87,
-      "t": "#ffffff"
+      "t": "#ffffff\n\n\n\n\n\n#43165e"
     },
-    "Q",
+    "Q\n\n\n\n\n\nSuper",
     {
-      "x": 9.25
+      "x": 9.25,
+      "t": "#ffffff"
     },
     "P"
   ],
