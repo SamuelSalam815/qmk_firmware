@@ -9,7 +9,7 @@
       "c": "#96938e",
       "t": "#ffffff\n#c13828\n#f8d615\n#0046ad\n\n\n\n#8ed7b0"
     },
-    "E\nF8\n+\n8\n\n\n\n{",
+    "E\nF8\n@\n8\n\n\n\n{",
     {
       "x": 5.25,
       "t": "#ffffff\n\n\n#43165e",
@@ -34,7 +34,7 @@
       "x": 1,
       "t": "#ffffff\n#c13828\n#f8d615\n#0046ad\n\n\n\n#8ed7b0"
     },
-    "R\nF9\n-\n9\n\n\n\n}",
+    "R\nF9\n!\n9\n\n\n\n}",
     {
       "x": 3.25,
       "t": "#ffffff\n\n\n#43165e",
@@ -91,7 +91,7 @@
       "t": "#ffffff\n#c13828\n#f8d615\n#0046ad\n#1a1a1a\n\n\n#8ed7b0",
       "f2": 0
     },
-    "D\nF2\n#\n2\nCtrl\n\n\n(",
+    "D\nF2\n-\n2\nCtrl\n\n\n(",
     {
       "x": 5.25,
       "t": "#ffffff\n\n\n#43165e\n#1a1a1a",
@@ -111,11 +111,11 @@
       "t": "#ffffff\n#c13828\n#f8d615\n#0046ad\n#1a1a1a\n\n\n#8ed7b0",
       "f2": 0
     },
-    "S\nF1\n!\n1\nAlt\n\n\n$",
+    "S\nF1\n*\n1\nAlt\n\n\n$",
     {
       "x": 1
     },
-    "F\nF3\n*\n3\nShift\n\n\n)",
+    "F\nF3\n=\n3\nShift\n\n\n)",
     {
       "x": 3.25,
       "t": "#ffffff\n\n\n#43165e\n#8ed7b0",
@@ -139,7 +139,7 @@
       "x": 4,
       "t": "#ffffff\n#c13828\n#f8d615\n\n\n\n\n#8ed7b0"
     },
-    "G\nF10\n=\n\n\n\n\n%",
+    "G\nF10\n+\n\n\n\n\n%",
     {
       "x": 1.25,
       "t": "#ffffff\n\n\n#43165e\n#f8d615"
@@ -151,7 +151,7 @@
       "y": -0.8700000000000001,
       "t": "#ffffff\n\n#f8d615\n\n#1a1a1a\n\n\n#8ed7b0"
     },
-    "A\n\n@\n\nSuper\n\n\n^",
+    "A\n\n#\n\nSuper\n\n\n^",
     {
       "x": 9.25,
       "t": "#ffffff\n\n\n#43165e\n#1a1a1a"
@@ -259,7 +259,7 @@
       "x": -2,
       "t": "#ffffff\n\n\n#8ed7b0"
     },
-    "Shift\n\n\nCW"
+    "Shift"
   ],
   [
     {
