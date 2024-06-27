@@ -18,7 +18,7 @@
         1
       ]
     },
-    "E\nF8\n{\n8\n\n\nCtrl\n@",
+    "E\nF8\n{\n8\n\n\nAlt Tab\n@",
     {
       "x": 5.25,
       "t": "#ffffff\n\n\n#43165e",
@@ -46,7 +46,7 @@
         1
       ]
     },
-    "W\nF7\n\n7\n\n\nAlt\n`",
+    "W\nF7\n\n7\n\n\nCtrl Tab\n`",
     {
       "x": 1,
       "t": "#ffffff\n#c13828\n#8ed7b0\n#0046ad\n\n\n#43165e\n#f8d615"
@@ -95,7 +95,7 @@
       "y": -0.87,
       "t": "#ffffff\n\n\n\n\n\n#43165e"
     },
-    "Q\n\n\n\n\n\nSuper",
+    "Q\n\n\n\n\n\nSuper Tab",
     {
       "x": 9.25,
       "t": "#ffffff"
