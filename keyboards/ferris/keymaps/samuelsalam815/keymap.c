@@ -41,16 +41,20 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     }
 }
 
+const uint16_t PROGMEM arrow_keys[] = {KC_RIGHT, KC_LEFT, KC_DOWN, KC_UP};
+
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     update_swapper(
         &alt_tab_active, KC_LALT, KC_TAB, ALT_TAB,
         keycode, record,
-        OSM(MOD_LSFT)
+        OSM(MOD_LSFT),
+        arrow_keys, sizeof(arrow_keys)
     );
     update_swapper(
         &ctl_tab_active, KC_LCTL, KC_TAB, CTL_TAB,
         keycode, record,
-        OSM(MOD_LSFT)
+        OSM(MOD_LSFT),
+        arrow_keys, sizeof(arrow_keys)
     );
     return true;
 }

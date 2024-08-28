@@ -15,10 +15,12 @@
 // e.g. alt-shift-tab switches tabs in the opposite direction to alt-tab so the backmod is shift.
 void update_swapper(
     bool *active,
-    uint16_t cmdish,
-    uint16_t tabish,
-    uint16_t trigger,
-    uint16_t keycode,
-    keyrecord_t *record,
-    uint16_t backmod
+    const uint16_t cmdish,
+    const uint16_t tabish,
+    const uint16_t trigger,
+    const uint16_t keycode,
+    const keyrecord_t *record,
+    const uint16_t backmod,
+    const uint16_t *ignore_keys,
+    const uint16_t ignore_keys_len
 );
