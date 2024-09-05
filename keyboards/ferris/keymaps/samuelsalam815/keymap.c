@@ -22,9 +22,6 @@ const uint16_t PROGMEM left_esc_combo[] = {LT(1,KC_J), RCTL_T(KC_K), COMBO_END};
 const uint16_t PROGMEM del_combo[] = {KC_C, KC_V, COMBO_END};
 const uint16_t PROGMEM copy_combo[] = {KC_X, KC_C, COMBO_END};
 
-bool alt_tab_active = false;
-bool ctl_tab_active = false;
-
 combo_t key_combos[] = {
     COMBO(left_esc_combo, KC_ESC),
     COMBO(del_combo, KC_DEL),
@@ -42,8 +39,6 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     }
 }
 
-const uint16_t PROGMEM arrow_keys[] = {KC_RIGHT, KC_LEFT, KC_DOWN, KC_UP};
-
 const uint16_t PROGMEM number_combo_keys[]            = {KC_1, KC_2, KC_4, KC_8};
 const uint16_t PROGMEM fkey_combo_keys[]              = {KC_F1, KC_F2, KC_F4, KC_F8};
 const uint16_t PROGMEM number_combo_keys_count        = sizeof(number_combo_keys) / sizeof(uint16_t);
@@ -57,6 +52,10 @@ int8_t fkey_combo_pressed_count   = 0;
 uint8_t number_combo_output_index = 0;
 uint8_t fkey_combo_output_index   = 0;
 
+const uint16_t PROGMEM arrow_keys[] = {KC_RIGHT, KC_LEFT, KC_DOWN, KC_UP};
+const uint16_t PROGMEM arrow_keys_count = sizeof(arrow_keys) / sizeof(uint16_t);
+struct swapper_keys alt_tab_swapper = {false, ALT_TAB, KC_LALT, KC_TAB, OSM(MOD_LSFT), arrow_keys, arrow_keys_count};
+struct swapper_keys clt_tab_swapper = {false, CTL_TAB, KC_LCTL, KC_TAB, OSM(MOD_LSFT), arrow_keys, arrow_keys_count};
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     if(!process_bitwise_combo(
@@ -77,17 +76,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     //     fkey_combo_keys_count,
     //     fkey_combo_output_keys,
     //     fkey_combo_output_keys_count)) return false;
-    update_swapper(
-        &alt_tab_active, KC_LALT, KC_TAB, ALT_TAB,
-        keycode, record,
-        OSM(MOD_LSFT),
-        arrow_keys, sizeof(arrow_keys)
-    );
-    update_swapper(
-        &ctl_tab_active, KC_LCTL, KC_TAB, CTL_TAB,
-        keycode, record,
-        OSM(MOD_LSFT),
-        arrow_keys, sizeof(arrow_keys)
-    );
+    update_swapper(keycode, record, &alt_tab_swapper);
+    update_swapper(keycode, record, &clt_tab_swapper);
     return true;
 }
+

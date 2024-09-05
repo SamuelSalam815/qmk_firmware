@@ -2,25 +2,40 @@
 
 #include QMK_KEYBOARD_H
 
-// Implements cmd-tab like behaviour on a single key. On first tap of trigger
-// cmdish is held and tabish is tapped -- cmdish then remains held until some
-// other key is hit or released. For example:
+// Stores keys for a general 'alt-tab' behavior. For example can be used for 'ctrl-tab' also.
+struct swapper_keys{
+    // Whether the swapping mechnaism is active
+    bool is_active;
+
+    // The key code which can be pressed to activate swapping mechanism.
+    // The intention is to repeatedly press this key instead of having to hold a key down.
+    const uint16_t trigger_key;
+
+    // The key code to hold down while swapping. For 'alt-tab' it is the 'alt' key code.
+    const uint16_t held_key;
+
+    // The key code used to perform the swap. For 'alt-tab' it is the 'tab' key code.
+    const uint16_t switch_key;
+
+    // The key code which can be held so that the switch goes backwards. For 'alt-tab' it is the 'shift' key code.
+    const uint16_t backmod_key;
+    
+    // An array of key codes which should be ignored for the purposes disabling the swapping mechanism.
+    // The intention is to allow keys like the arrow keys to navigate whithout having to hold down a separate key.
+    const uint16_t *ignored_keys;
+
+    // The number of key codes in the array of key codes to ignore.
+    const uint16_t ignored_keys_count;
+};
+
+// Implements ctrl-tab like behaviour on a single key. 
+// On first tap of the trigger key the 'held key' is held and the 'switch key' is tapped.
+// The 'held key' then remains held until some other, non-ignored key is pressed or released. 
 //
-//     trigger, trigger, a -> cmd down, tab, tab, cmd up, a
-//     nav down, trigger, nav up -> nav down, cmd down, tab, cmd up, nav up
-//
-// This behaviour is useful for more than just cmd-tab, hence: cmdish, tabish.
-//
-// backmod is inteded for a key that is used for inverting the behavior
-// e.g. alt-shift-tab switches tabs in the opposite direction to alt-tab so the backmod is shift.
+// This behaviour is useful for more than just ctrl-tab, 
+// so a different swapper for each swap-like key combo can be used - for example for alt-tab.
 void update_swapper(
-    bool *active,
-    const uint16_t cmdish,
-    const uint16_t tabish,
-    const uint16_t trigger,
     const uint16_t keycode,
     const keyrecord_t *record,
-    const uint16_t backmod,
-    const uint16_t *ignore_keys,
-    const uint16_t ignore_keys_len
+    struct swapper_keys *swapper
 );

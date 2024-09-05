@@ -1,45 +1,42 @@
 #include "swapper.h"
-bool contains(const uint16_t *arr, const uint16_t len, const uint16_t target)
+bool should_end_swapping(struct swapper_keys *swapper, const uint16_t keycode)
 {
-    if(len == 0)
-    {
+    if(!swapper->is_active){
         return false;
     }
 
-    for(int i = 0; i < len; i++)
-    {
-        if(arr[i] == target)
+    if(keycode == swapper->trigger_key || keycode == swapper->backmod_key){
+        return false;
+    }
+
+    for(int i = 0; i < swapper->ignored_keys_count; i++){
+        if(keycode == swapper->ignored_keys[i])
         {
-            return true;
+            return false;
         }
     }
 
-    return false;
+    return true;
 }
+
 void update_swapper(
-    bool *active,
-    const uint16_t cmdish,
-    const uint16_t tabish,
-    const uint16_t trigger,
     const uint16_t keycode,
     const keyrecord_t *record,
-    const uint16_t backmod,
-    const uint16_t *ignore_keys,
-    const uint16_t ignore_keys_len)
+    struct swapper_keys *swapper)
 {
-    if (keycode == trigger) {
+    if (keycode == swapper->trigger_key) {
         if (record->event.pressed) {
-            if (!*active) {
-                *active = true;
-                register_code(cmdish);
+            if (!swapper->is_active) {
+                swapper->is_active = true;
+                register_code(swapper->held_key);
             }
-            register_code(tabish);
+            register_code(swapper->switch_key);
         } else {
-            unregister_code(tabish);
-            // Don't unregister cmdish until some other key is hit or released.
+            unregister_code(swapper->switch_key);
+            // Don't unregister held key until some other key is hit or released.
         }
-    } else if (*active && keycode != backmod && !contains(ignore_keys, ignore_keys_len, keycode)) {
-        unregister_code(cmdish);
-        *active = false;
+    } else if (should_end_swapping(swapper, keycode)) {
+        unregister_code(swapper->held_key);
+        swapper->is_active = false;
     }
 }
