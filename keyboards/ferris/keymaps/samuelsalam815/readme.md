@@ -5,10 +5,10 @@
 1. Go to the [online qmk configurator](https://config.qmk.fm/)
 2. Upload `ferris_sweep_intermediate_keymap.json`
 3. Perform required edits using GUI
+
+Make sure to remove the `ferris_sweep_` prefix from the 'KEYMAP NAME', otherwise `ferris_sweep` will be duplicated when the intermediate keymap is downloaded
+
 4. Download updated config
-
-Edit the `keymap` field to not include a duplicate instance of `ferris_sweep` at the start
-
 5. Convert the JSON file to a c file that can flash the keyboard
 
 run the following from the QMK MSYS terminal in the current directory
@@ -17,9 +17,7 @@ qmk json2c ferris_sweep_intermediate_keymap.json -o temp.c
 ```
 
 6. Copy paste the contents of the `keymaps` array from the temporary file to `keymap.c`
-
 7. Delete `temp.c`
-
 8. Compile and flash with new firmware
 
 Compile and then flash the right-hand keyboard by running the following from the QMK MSYS terminal in the current directory
@@ -29,7 +27,8 @@ qmk flash -bl uf2-split-right -e CONVERT_TO=elite_pi
 ```
 
 The controller must be put into boot mode for this command to automatically flash it with the new firmware.
-- a typical key map has a dedicated key for this, check the visual aids and if that fails, the documentation for the firmware for the magic boot mode.
+- a typical key map has a dedicated key for this, check the visual aids 
+- If the current mapping doesn't have a reset key, then check firmware documentation for the magic boot mode.
 
 ## Updating the visual aids
 
