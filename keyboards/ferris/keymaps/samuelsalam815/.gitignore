@@ -1,0 +1,6 @@
+# Prevent temporary file from entering version control in case I forget to delete it
+temp.c
+
+# Explicitly include visual aid files
+!ferris-sweep-gaming-layout.png
+!ferris-sweep-layout.png
