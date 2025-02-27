@@ -207,7 +207,7 @@
       "KC_RCTL",
       "KC_RALT",
       "KC_RGUI",
-      "KC_NO",
+      "LALT(KC_F4)",
       "KC_F4",
       "KC_F5",
       "KC_F6",

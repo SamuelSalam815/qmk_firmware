@@ -1,6 +1,6 @@
 [
   {
-    "name": "Ferris Sweep Layout",
+    "name": "Ferris Sweep Layout Visual",
     "author": "Samuel Salam"
   },
   [
@@ -286,9 +286,9 @@
   [
     {
       "y": -0.8700000000000001,
-      "t": "#ffffff"
+      "t": "#ffffff\n#c13828"
     },
-    "Z",
+    "Z\nAlt+F4",
     {
       "x": 9.25,
       "t": "#ffffff\n\n#f8d615\n#8ed7b0",
