@@ -279,9 +279,9 @@
     "B\nF12\n\n\n\n\nGame",
     {
       "x": 1.25,
-      "t": "#ffffff\n\n#f8d615\n#43165e"
+      "t": "#ffffff\n\n\n#43165e"
     },
-    "N\n\n\\\nInsert"
+    "N\n\n\nInsert"
   ],
   [
     {
@@ -291,9 +291,10 @@
     "Z",
     {
       "x": 9.25,
+      "t": "#ffffff\n\n#f8d615\n#8ed7b0",
       "f": 3
     },
-    "?\n\n\n\n\n\n/"
+    "?\n\n\\\n\\\n\n\n/"
   ],
   [
     {
