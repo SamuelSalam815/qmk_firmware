@@ -17,11 +17,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 const uint16_t PROGMEM left_esc_combo[] = {LT(1,KC_J), RCTL_T(KC_K), COMBO_END};
+const uint16_t PROGMEM game_mode_esc_combo[] = {KC_J, KC_K, COMBO_END};
 const uint16_t PROGMEM del_combo[] = {KC_C, KC_V, COMBO_END};
 const uint16_t PROGMEM copy_combo[] = {KC_X, KC_C, COMBO_END};
 
 combo_t key_combos[] = {
     COMBO(left_esc_combo, KC_ESC),
+    COMBO(game_mode_esc_combo, KC_ESC),
     COMBO(del_combo, KC_DEL),
     COMBO(copy_combo, LCTL(KC_C)),
 };
